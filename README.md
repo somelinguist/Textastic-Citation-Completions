@@ -42,7 +42,7 @@ Once installed, the shortcut can be used as a Personal Automation to automatical
 
 After that, whenever Textastic is run, the shortcut will update citation completions based on the default bibliography.
 
- > Be warned, it will also show a notification *every time* you switch to Textastic from a different app, your home screen, the app switcher.
+ > Be warned, it will also run and show a notification *every time* you switch to Textastic from a different app, your home screen, or the app switcher. *Every time*.
 
 
 # Standalone script for use in Scriptable
