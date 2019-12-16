@@ -1,5 +1,7 @@
 Scriptable app script to create and update a code completion file in Textastic for Pandoc-style citations in markdown files.
 
+1. As a [Siri Shorcut](siri-shortcut)
+2. As a [standalone script for use in Scriptable](standalone-script-for-use-in-scriptable)
 
 # Siri Shortcut
 This version is a Siri Shortcut that can be run without opening Scriptable and can also be used as an Personal Automation. The shortcut will walk you through installation the first time.
