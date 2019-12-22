@@ -36,7 +36,7 @@ let completionFile = {
 		{
 			description: "Bibliographic reference completions",
 			scope: "text.pandoc, text.html.markdown",
-			pattern: "(@_?[a-zA-Z0-9_:.#$%&-+?<>~/]*)",
+			pattern: "@(.*)",
 			completionCaptureIndex: 1,
 			completionSetNames: [
 				"pandoc.references"
@@ -51,10 +51,10 @@ let references = {
 			strings: []
 		}
 
-for (match of bib.matchAll(/@([a-zA-Z]*)\{([a-zA-Z0-9_:.#$%&-+?<>~/]*)/g)) {
+for (match of bib.matchAll(/@([a-zA-Z]*)\s*\{\s*([a-zA-Z0-9_:.#$%&-+?<>~/]*),.*?^\s*title\s*=\s*[\{"](.*?)[\\}"],$/gmis)) {
   let t = match[1].toLowerCase();
   if (["preamble", "string", "comment"].indexOf(t) === -1) {
-    references.strings.push("@" + match[2]);
+    references.strings.push({"string": match[2]+" | "+match[3].replace(/[\{\}]/g, ""), "replace": match[2]});
   }
 }
 
@@ -64,4 +64,4 @@ let path = fm.joinPath(fm.bookmarkedPath("Textastic"), "#Textastic/CodeCompletio
 fm.createDirectory(path, true);
 path = fm.joinPath(path, "citations.json")
 
-fm.writeString(path, JSON.stringify(completionFile, null, 2))
+fm.writeString(path, JSON.stringify(completionFile, null, 2));
