@@ -1,4 +1,4 @@
-Scriptable app script to create and update a code completion file in Textastic for Pandoc-style citations in markdown files.
+Scriptable app script to create and update a code completion file in Textastic for Pandoc-style citations in markdown files and keys for citation commands in (La)TeX (including BibTex, BibLaTeX, and natbib).
 
 1. As a [Siri Shorcut](#siri-shortcut)
 2. As a [standalone script for use in Scriptable](#standalone-script-for-use-in-scriptable)
@@ -8,7 +8,7 @@ This version is a Siri Shortcut that can be run without opening Scriptable and c
 
 ## Installation
 1. Enable shared/untrusted shortcuts as described on [Apple's website](https://support.apple.com/en-gb/guide/shortcuts/apdfeb05586f/3.2/ios/13.2) if you haven't already done so.
-2. Get the shared Updated Textastic Citations shortcut here: [https://www.icloud.com/shortcuts/fe1101d4c92746b2aa2c30a357f961c1](https://www.icloud.com/shortcuts/fe1101d4c92746b2aa2c30a357f961c1).
+2. Get the shared Updated Textastic Citations shortcut here: [https://www.icloud.com/shortcuts/a295845e6daa439e881cb84604fd7822](https://www.icloud.com/shortcuts/a295845e6daa439e881cb84604fd7822).
 3. On first run, the shortcut will walk you through the necessary installation steps:
     - Installing the bundled script into Scriptable. You can see the script that it installs at `shortcut/Update Textastic Citations.js`.
     - Creating the necessary file `#Textastic/CodeCompletion/citations.json` in Textastic's document folder in `On My iPad`, and automatically creating the Bookmark needed in Scriptable.
@@ -19,7 +19,7 @@ This version is a Siri Shortcut that can be run without opening Scriptable and c
 If you specified a default bibliography during installation:
 
 1. Restart Textastic for it to load the updated completions. This is necessary any time the .bib file is updated.
-2. While editing markdown files, Textastic should now offer completions for in-text citations from the .bib file after typing `@`.
+2. While editing markdown files, Textastic should now offer completions for in-text citations from the .bib file after typing `@`. When editing `.tex` files, completions should be triggered for keys in the various citation commands.
 
 If you want to update the completions after updating the file bookmarked as the default one, just run the shortcut from the Shortcuts app, widget, etc. Then just restart Textastic.
 
@@ -57,7 +57,7 @@ This version only requires Scriptable and Textastic. It needs to open the Script
 1. Use the Share Sheet to pass a single `.bib` file or selected entries as text.
   - If a default bibliography has been set, the script can also just be run in Scriptable.
 2. Restart Textastic for it to load the updated completions. This is necessary any time the .bib file is updated.
-3. While editing markdown files, Textastic should now offer completions for in-text citations from the .bib file after typing `@`.
+3. While editing markdown files, Textastic should now offer completions for in-text citations from the .bib file after typing `@`. When editing `.tex` files, completions should be triggered for keys in the various citation commands.
     
 # Possible future improvements
 - [ ] Support CSL JSON as input.
