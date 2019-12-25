@@ -36,7 +36,7 @@ let completionFile = {
       {
         description: "Pandoc/markdown reference completions",
         scope: "text.pandoc, text.html.markdown",
-        pattern: "@(.*)",
+        pattern: "(?<![\\w\\d])@(.*)",
         completionCaptureIndex: 1,
         completionSetNames: [
           "citation.references"
