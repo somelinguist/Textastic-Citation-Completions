@@ -8,7 +8,7 @@ This version is a Siri Shortcut that can be run without opening Scriptable and c
 
 ## Installation
 1. Enable shared/untrusted shortcuts as described on [Apple's website](https://support.apple.com/en-gb/guide/shortcuts/apdfeb05586f/3.2/ios/13.2) if you haven't already done so.
-2. Get the shared Updated Textastic Citations shortcut here: [https://www.icloud.com/shortcuts/1802548fa79a411f8fe8ccd483543e13](https://www.icloud.com/shortcuts/1802548fa79a411f8fe8ccd483543e13).
+2. Get the shared Updated Textastic Citations shortcut here: [https://www.icloud.com/shortcuts/7c0c8465cb5f40ce96c63ce24d7a6796](https://www.icloud.com/shortcuts/7c0c8465cb5f40ce96c63ce24d7a6796).
 3. On first run, the shortcut will walk you through the necessary installation steps:
     - Creating the necessary file `#Textastic/CodeCompletion/citations.json` in Textastic's document folder in `On My iPad`, and automatically creating the Bookmark needed in Scriptable.
     - Optionally creating a Bookmark to a default `.bib` file to use when running the script without input from the Share Sheet. This is a necessary step if you want to use the shortcut as a Personal Automation that can run automatically when you open Textastic to update citation completions. If you choose `No` at this step, the shortcut in 4. can be used to set a default bibliography.
