@@ -8,9 +8,8 @@ This version is a Siri Shortcut that can be run without opening Scriptable and c
 
 ## Installation
 1. Enable shared/untrusted shortcuts as described on [Apple's website](https://support.apple.com/en-gb/guide/shortcuts/apdfeb05586f/3.2/ios/13.2) if you haven't already done so.
-2. Get the shared Updated Textastic Citations shortcut here: [https://www.icloud.com/shortcuts/537e7c8537cf4c7fb79628e13b055e2f](https://www.icloud.com/shortcuts/537e7c8537cf4c7fb79628e13b055e2f).
+2. Get the shared Updated Textastic Citations shortcut here: [https://www.icloud.com/shortcuts/1802548fa79a411f8fe8ccd483543e13](https://www.icloud.com/shortcuts/1802548fa79a411f8fe8ccd483543e13).
 3. On first run, the shortcut will walk you through the necessary installation steps:
-    - Installing the bundled script into Scriptable. You can see the script that it installs at `shortcut/Update Textastic Citations.js`.
     - Creating the necessary file `#Textastic/CodeCompletion/citations.json` in Textastic's document folder in `On My iPad`, and automatically creating the Bookmark needed in Scriptable.
     - Optionally creating a Bookmark to a default `.bib` file to use when running the script without input from the Share Sheet. This is a necessary step if you want to use the shortcut as a Personal Automation that can run automatically when you open Textastic to update citation completions. If you choose `No` at this step, the shortcut in 4. can be used to set a default bibliography.
 4. Optionally, get an additional shortcut that can be used to update which `.bib` file should be used by default: [https://www.icloud.com/shortcuts/cedf14579a274c029a4e029d8526f53a](https://www.icloud.com/shortcuts/cedf14579a274c029a4e029d8526f53a). You could also create your own that updates the `Textastic Citations` Bookmark.
@@ -25,7 +24,7 @@ If you want to update the completions after updating the file bookmarked as the 
 
 If you want to temporarily update the completions without changing the default bibliography, you can run the shortcut from the Share Sheet and pass a single `.bib` file or selected entries as text. You can reset the completions to the default bibliography by running the shortcut without passing any options.
 
-To change the default `.bib` file used for updates, run the shortcut referenced in 4. above (you could also make your own shortcut that just modifies the `Textastic Citations` bookmark.
+To change the default `.bib` file used for updates, run the shortcut referenced in 4. above (you could also make your own shortcut that just modifies the `Textastic Citations` bookmark, or delete the same bookmark in Scriptable under Siri & Shortcuts.
 
 ## Use the shortcut as a Personal Automation
 Once installed, the shortcut can be used as a Personal Automation to automatically update citation completions when Textastic is started. This requires a default bibliography to be set.
